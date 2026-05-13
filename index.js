@@ -4,7 +4,6 @@
 
 // console.log(`The driver's name is ${hacker1}`);
 
-
 // let hacker2 = "Daniel";
 
 // console.log(`Then navigator's name is ${hacker2}`);
@@ -15,20 +14,23 @@
 // - It seems that the navigator has the longest name, it has XX characters. or
 // - Wow, you both have equally long names, XX characters!.
 
-let driver = "Maximum";
+// let driver = "Maximum"
 
-let navigator = "Daniela";
+// let navigator = "Daniela"
 
-if (driver.length > navigator.length){
- console.log(`The driver has the longest name, it has ${driver.length} characters.`);
-}
-
-else if (driver.length < navigator.length){
-    console.log(`It seems that the navigator has the longest name, it has ${navigator.length} characters`)
-}
-else {
-    console.log(`Wow, you both have equally long names, ${driver} ${driver.length} ${navigator} ${navigator.length} characters!.`)
-}
+// if (driver.length > navigator.length) {
+//   console.log(
+//     `The driver has the longest name, it has ${driver.length} characters.`,
+//   )
+// } else if (driver.length < navigator.length) {
+//   console.log(
+//     `It seems that the navigator has the longest name, it has ${navigator.length} characters`,
+//   )
+// } else {
+//   console.log(
+//     `Wow, you both have equally long names, ${driver} ${driver.length} ${navigator} ${navigator.length} characters!.`,
+//   )
+// }
 
 // Iteration 3: Loops
 // ### Iteration 3: Loops
@@ -43,82 +45,109 @@ else {
 // - `Yo, the navigator goes first, definitely.` <br>
 // - `What?! You both have the same name?`
 
-let space = ""
+// let space = ""
 
-for (let i = 0; i < driver.length; i++){
-    space += driver[i].toUpperCase() + " ";
-}
+// for (let i = 0; i < driver.length; i++) {
+//   space += driver[i].toUpperCase() + " "
+// }
 
-console.log(space);
+// console.log(space)
 
+// let space2 = ""
 
-let space2 = ""
+// for (let i = 0; i < driver.length; i++) {
+//   space2 = space2 + driver[i].toUpperCase() + " "
+// }
 
-for (let i = 0; i < driver.length; i++){
-    space2 = space2 + driver[i].toUpperCase() + " ";
-}
+// console.log(space2)
 
-console.log(space2);
+// let result = driver.toUpperCase().split("").join(" ")
 
+// console.log(result)
 
-let result = driver.toUpperCase().split("").join(" ");
+// result = ""
 
-console.log(result);
+// for (let i = 0; i < navigator.length; i++) {
+//   result = navigator.split("").reverse().join("")
+// }
+// console.log(result)
 
+// let reverseName = navigator.split("").reverse().join("")
 
-result = "";
+// console.log(reverseName)
 
-for(let i = 0; i < navigator.length; i++){
-    result = navigator.split('').reverse().join('');
-}
-console.log(result)
+// let reverse = ""
 
+// for (let i = navigator.length - 1; i >= 0; i--) {
+//   reverse += navigator[i]
+// }
 
+// console.log(reverse)
 
+// let reverseNameV2 = ""
 
-let reverseName = navigator.split('').reverse().join('');
+// for (let i = navigator.length - 1; 0 >= i; i--) {
+//   reverseName2 += navigator[i]
+// }
 
-console.log(reverseName);
+// console.log(reverseNameV2)
 
+// let reverseName2 = ""
 
+// for (let i = navigator.length - 1; i >= 0; i--) {
+//   reverseName2 += navigator[i]
+// }
 
+// console.log(reverseName2)
 
-let reverse = "";
+// if (driver < navigator) {
+//   console.log("The driver's name goes first.")
+// } else if (driver > navigator) {
+//   console.log("Yo, the navigator goes first, definitely.")
+// } else {
+//   console.log("What?! You both have the same name?")
+// }
 
+// Iteration 1
 
-for(let i = navigator.length -1; i >= 0; i--){
-    reverse += navigator[i]
-}
+let hacker1 = "Maximum"
+console.log(`The driver's name is ${hacker1}`)
 
-console.log(reverse);
+let hacker2 = "Daniela"
+console.log(`The navigator's name is ${hacker2}`)
 
+// Iteration 2
 
-
-
-let reverseNameV2 = "";
-
-for(let i = navigator.length -1; 0 >= i; i--){
-    reverseName2 += navigator[i];
-}
-
-console.log(reverseNameV2);
-
-
-
-let reverseName2 = "";
-
-
-for(let i = navigator.length -1; i >=0; i--){
-   reverseName2 +=  navigator[i];
-}
-
-console.log(reverseName2);
-
-
-if (driver < navigator) {
-  console.log("The driver's name goes first.");
-} else if (driver > navigator) {
-  console.log("Yo, the navigator goes first, definitely.");
+if (hacker1.length > hacker2.length) {
+  console.log(
+    `The driver has the longest name, it has ${hacker1.length} characters.`,
+  )
+} else if (hacker1.length < hacker2.length) {
+  console.log(
+    `It seems that the navigator has the longest name, it has ${hacker2.length} characters.`,
+  )
 } else {
-  console.log("What?! You both have the same name?");
+  console.log(
+    `Wow, you both have equally long names, ${hacker1.length} characters!`,
+  )
+}
+
+// Iteration 3.1
+
+let spacedName = hacker1.toUpperCase().split("").join(" ")
+console.log(spacedName)
+
+// Iteration 3.2
+
+let reversedName = hacker2.split("").reverse().join("")
+console.log(reversedName)
+
+// Iteration 3.3
+
+if (hacker1.localeCompare(hacker2) < 0) {
+  console.log("The driver's name goes first.")
+} else if (hacker1.localeCompare(hacker2) > 0) {
+  console.log("Yo, the navigator goes first, definitely.")
+} else {
+  console.log("What?! You both have the same name?")
 }
